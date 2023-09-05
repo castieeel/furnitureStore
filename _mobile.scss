@@ -1,0 +1,200 @@
+/*Мобилка*/
+@media(max-width:767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        padding-top: 32px;
+        border-bottom: none;
+    }
+
+    .header_input {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo_img {
+        width: 99px;
+    }
+
+    .menu_mob {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .title {
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+    }
+
+    .top {
+        &_text {
+            font-size: 16px;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        &_link {
+            font-size: 14px;
+        }
+
+        &_content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+    .heading {
+        font-size: 24px;
+        line-height: 29px;
+        padding-top: 32px;
+    }
+
+    .product-box {
+        padding-top: 0px;
+    }
+
+
+
+    .for-box {
+        padding-top: 0px;
+    }
+
+    .for {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+
+        &_item {
+            grid-column: 1/-1;
+            height: 375px;
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        &_item_big {
+            height: 244px;
+        }
+    }
+
+    .footer {
+        padding-bottom: 32px;
+        justify-content: center;
+
+        &_content {
+            display: table-column;
+            justify-content: center;
+        }
+
+        &_nav {
+            padding-right: 100px;
+        }
+
+        &_img {
+            display: none;
+        }
+
+        &_menu {
+            padding-right: 100px;
+        }
+
+        &_info {
+            gap: 0px;
+        }
+
+        &_form {
+            padding-left: 0px;
+            padding-top: 32px;
+        }
+    }
+
+    .product {
+        width: 343px;
+
+        &_heading {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &_text {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &_price {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &_price_sale {
+            font-size: 18px;
+            line-height: 22px;
+            text-decoration-line: line-through;
+        }
+    }
+
+    .box-link {
+        padding-top: 36px;
+        padding-bottom: 32px;
+    }
+
+    .form_text {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .catalog_nav {
+        padding-top: 32px;
+    }
+
+    .bredcrums_link {
+        font-size: 14px;
+        line-height: 32px;
+    }
+
+    .catalog_nav {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .cart {
+        grid-template-columns: repeat(8, 1fr);
+        row-gap: 48px;
+
+        &_form {
+            grid-column: span 8;
+        }
+
+        &_info_product {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        &_rub {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &_img {
+            display: none;
+        }
+    }
+
+    .btn_cart_sec {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    product-content {
+        justify-content: center;
+    }
+}

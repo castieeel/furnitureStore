@@ -1,0 +1,83 @@
+/*Каталог*/
+.select {
+    position: relative;
+    width: 288px;
+}
+
+.select select {
+    display: block;
+    height: 41px;
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 22px;
+    background: none;
+    /* убираем фон */
+    -webkit-appearance: none;
+    /* Chrome */
+    -moz-appearance: none;
+    /* Firefox */
+    appearance: none;
+    /* убираем дефолнтные стрелочки */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    border-radius: 20px;
+}
+
+.select:after {
+    content: "";
+    display: block;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    z-index: 1;
+    margin-top: -3px;
+    background-image: url(img/select.svg);
+    background-size: contain;
+    width: 20px;
+    height: 11px;
+    background-repeat: no-repeat;
+}
+
+.top_cat {
+    height: 400px;
+    background-image: url(img/topback_catalog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.title {
+    margin-top: 127px;
+}
+
+.catalog_nav {
+    padding-top: 64px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bredcrums_link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+    &:hover span{
+        text-decoration: underline;
+    }
+}
+
+
+.bredcrums_link:not(:last-child):after {
+    content: "/";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
